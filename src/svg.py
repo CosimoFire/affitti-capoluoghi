@@ -46,7 +46,7 @@ s += foot(W, H - 34, "elaborazione CNA. Affitto medio di un'abitazione di 70 mq,
 (OUT / "dotplot_affitti_stipendi_2019-2025.svg").write_text("\n".join(s), encoding="utf8")
 
 # ---------- mappa ----------
-STOPS = [(0xcf, 0xea, 0xf8), (0x16, 0x9c, 0xdc), (0x07, 0x3f, 0x5e)]
+STOPS = [(0xee, 0xf8, 0xfd), (0x16, 0x9c, 0xdc), (0x07, 0x3f, 0x5e)]
 inc = [r["inc"] for r in rows]
 LO, HI = int(min(inc) // 10 * 10), int(-(-max(inc) // 10) * 10)
 def col(v):
@@ -64,8 +64,8 @@ for v in range(LO, HI + 1, 10):
     s.append(f'<text x="{px:.1f}" y="156" font-size="12" fill="{MUT}" text-anchor="{anc}">{v}%</text>')
 s.append(f'<line x1="0" x2="{W}" y1="164" y2="164" stroke="{GRC}" stroke-width="2"/>')
 s.append(f'<g transform="translate({(W-520)/2:.1f},{top}) scale({sc:.5f})">')
-s += [f'<path d="{d}" fill="#ececec" stroke="#fff" stroke-width="0.6"/>' for d in geo["d"]]
-s += [f'<circle cx="{r["xy"][0]}" cy="{r["xy"][1]}" r="6.5" fill="{col(r["inc"])}" stroke="#fff" stroke-width="1.2"/>'
+s += [f'<path d="{d}" fill="#f2f2f2" stroke="#fff" stroke-width="0.6"/>' for d in geo["d"]]
+s += [f'<circle cx="{r["xy"][0]}" cy="{r["xy"][1]}" r="6.5" fill="{col(r["inc"])}" stroke="#9b9b9b" stroke-opacity="0.5" stroke-width="1.2"/>'
       for r in sorted(rows, key=lambda r: r["inc"])]
 s.append("</g>")
 s += foot(W, H - 34, "elaborazione CNA. Perugia non è presente nel dataset")
