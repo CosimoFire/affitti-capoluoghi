@@ -67,23 +67,38 @@ s.append(f'<g transform="translate({(W-520)/2:.1f},{top}) scale({sc:.5f})">')
 s += [f'<path d="{d}" fill="#f2f2f2" stroke="#fff" stroke-width="0.6"/>' for d in geo["d"]]
 s += [f'<circle cx="{r["xy"][0]}" cy="{r["xy"][1]}" r="6.5" fill="{col(r["inc"])}" stroke="#9b9b9b" stroke-opacity="0.5" stroke-width="1.2"/>'
       for r in sorted(rows, key=lambda r: r["inc"])]
-# etichette: prime 3 e ultime 3 per incidenza (lato dell'etichetta scelto per non coprire altri capoluoghi)
+# etichette: prime 3 e ultime 3 per incidenza, con posizione in classifica
 srt = sorted(rows, key=lambda r: r["inc"])
-LATO = {"Vercelli": "end"}
-# Milano sta in mezzo a molti capoluoghi: etichetta spostata nell'area vuota a nord-ovest, con linea di richiamo
-FUORI = {"Milano": (-40, 52)}
+# Milano e Bologna stanno tra molti capoluoghi: etichette fisse in aree vuote (nord-ovest, Adriatico)
+FUORI = {"Milano": (-40, 52, 86, 56), "Bologna": (322, 178, 318, 174)}  # (x, y del testo, x, y dove arriva la linea)
+GIU = {"Vercelli"}  # etichetta sotto il pallino
 fs = 13 / sc
-lead = [f'<line x1="{r["xy"][0]}" y1="{r["xy"][1]}" x2="{FUORI[r["c"]][0] + 117}" y2="{FUORI[r["c"]][1] + 4}" stroke="{INK}" stroke-width="{1/sc:.2f}"/>'
-        for r in srt[-3:] if r["c"] in FUORI]
-i0 = next(i for i, x in enumerate(s) if x.startswith("<circle") and "r=\"6.5\"" in x)
-s[i0:i0] = lead  # linee sotto i pallini
+X0, X1 = (12 - (W - 520) / 2) / sc, (W - 12 - (W - 520) / 2) / sc  # margini utili in coordinate mappa
+def hits(b):  # pallini (r 6.5 + margine) che toccano il riquadro b = (x0, y0, x1, y1)
+    return sum(b[0] - 10 < r["xy"][0] < b[2] + 10 and b[1] - 10 < r["xy"][1] < b[3] + 10 for r in rows)
+lead, labels, boxes = [], [], []
 for r in srt[:3] + srt[-3:]:
-    cx, cy = r["xy"]; a = LATO.get(r["c"], "start"); dx = -10 if a == "end" else 10
-    s.append(f'<circle cx="{cx}" cy="{cy}" r="6.5" fill="none" stroke="{INK}" stroke-width="1.4"/>')
+    cx, cy = r["xy"]; txt = f'{len(srt) - srt.index(r)}° {r["c"]} {it(r["inc"], 1)}%'; w = len(txt) * fs * 0.51
     if r["c"] in FUORI:
-        (tx, ty), dx, a = FUORI[r["c"]], 0, "start"; cx, cy = tx, ty - fs * 0.35
-    s.append(f'<text x="{cx+dx}" y="{cy+fs*0.35:.1f}" font-size="{fs:.1f}" text-anchor="{a}" fill="{INK}" stroke="#fff" stroke-width="{4/sc:.1f}" '
-             f'stroke-linejoin="round" paint-order="stroke"><tspan font-weight="700">{esc(r["c"])}</tspan> {it(r["inc"],1)}%</text>')
+        tx, ty, lx, ly = FUORI[r["c"]]; a = "start"; lead.append((cx, cy, lx, ly))
+    else:  # cerca la posizione libera più vicina: a destra o a sinistra, spostando in verticale (con linea di richiamo)
+        best = None
+        for dy in (tuple(range(18, 160, 9)) if r["c"] in GIU else (0,) + tuple(v for k in range(14, 100, 9) for v in (-k, k))):
+            for a, x0 in ([("start", cx + 10), ("end", cx - 10 - w)] + ([("start", cx - k * w / 4) for k in range(0, 5)] if dy else [])):
+                y0 = cy + dy - fs * 0.65; b = (x0, y0, x0 + w, y0 + fs)
+                if x0 < X0 or x0 + w > X1: continue
+                own = abs(dy) < 1  # a dy=0 il pallino proprio non tocca il riquadro
+                score = (hits(b) - (0 if own else (b[1] - 10 < cy < b[3] + 10 and b[0] - 10 < cx < b[2] + 10)) + sum(not (b[2] < o[0] or b[0] > o[2] or b[3] < o[1] or b[1] > o[3]) for o in boxes)) * 100 + abs(dy)
+                if best is None or score < best[0]: best = (score, a, b, dy)
+        _, a, b, dy = best; boxes.append(b)
+        tx, ty = (b[0] if a == "start" else b[2]), cy + dy + fs * 0.35
+        if dy: lead.append((cx, cy, min(max(cx, b[0]), b[2]), b[1] if dy > 0 else b[3]))
+    labels.append(f'<circle cx="{cx}" cy="{cy}" r="6.5" fill="none" stroke="{INK}" stroke-width="1.4"/>')
+    labels.append(f'<text x="{tx:.1f}" y="{ty:.1f}" font-size="{fs:.1f}" text-anchor="{a}" fill="{INK}" stroke="#fff" stroke-width="{4/sc:.1f}" '
+                  f'stroke-linejoin="round" paint-order="stroke">{len(srt) - srt.index(r)}° <tspan font-weight="700">{esc(r["c"])}</tspan> {it(r["inc"],1)}%</text>')
+i0 = next(i for i, x in enumerate(s) if x.startswith("<circle") and 'r="6.5"' in x)
+s[i0:i0] = [f'<line x1="{a}" y1="{b}" x2="{c:.1f}" y2="{d:.1f}" stroke="{INK}" stroke-width="{1/sc:.2f}"/>' for a, b, c, d in lead]  # linee sotto i pallini
+s += labels
 s.append("</g>")
 s += foot(W, H - 34, "elaborazione CNA. Perugia non è presente nel dataset")
 (OUT / "mappa_incidenza_affitto_stipendio_2025.svg").write_text("\n".join(s), encoding="utf8")
