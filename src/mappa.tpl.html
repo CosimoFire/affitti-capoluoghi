@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quanto pesa l'affitto sullo stipendio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+:root{--blu:#169cdc;--blu-scuro:#0b6fa3;--ink:#1a1a1a;--ink2:#444;--muted:#6b6b6b;--grigio-chiaro:#d9d9d9;--panel:#f0f0f0;--bordo:#bdbdbd}
+*{box-sizing:border-box}
+html,body{margin:0;background:#fff}
+body{font-family:"Source Serif 4",Georgia,serif;color:var(--ink);font-size:16px;line-height:1.45}
+.wrap{max-width:620px;margin:0 auto;padding:16px 12px 2px}
+h1{font-size:clamp(28px,6vw,44px);line-height:1.1;margin:0 0 6px;font-weight:700;letter-spacing:-.01em;text-wrap:balance}
+.sub{margin:0 0 8px;color:var(--ink2);font-size:15px}
+.legend{margin:10px 0 6px;font-size:14px;color:var(--ink2);max-width:320px}
+.legend h3{font-size:14px;margin:0 0 6px;font-weight:600}
+.bar{height:12px;margin-bottom:3px}
+.t{position:relative;height:16px;font-size:12px;color:var(--muted)}
+.t span{position:absolute;transform:translateX(-50%);white-space:nowrap}
+.t span:first-child{transform:none}.t span:last-child{transform:translateX(-100%)}
+.chart{border-top:2px solid var(--grigio-chiaro);padding-top:6px}
+svg{display:block}
+#map{width:100%;height:auto;max-width:520px;margin:0 auto}
+.prov{fill:#ececec;stroke:#fff;stroke-width:.6}
+.dot{stroke:#fff;stroke-width:1.2;cursor:pointer}
+.dot:hover{stroke:var(--ink);stroke-width:1.8}
+#tip{position:fixed;pointer-events:none;background:#fff;color:var(--ink);border:1px solid var(--bordo);box-shadow:0 2px 8px rgba(0,0,0,.12);font-size:14px;padding:8px 10px;max-width:340px;min-width:240px;display:none;z-index:5}
+#tip b{font-size:15px}
+#tip table{border-collapse:collapse;margin-top:6px;width:100%}
+#tip td{padding:2px 0 2px 8px;font-variant-numeric:tabular-nums}
+#tip td:first-child{padding-left:0}
+#tip td.n{text-align:right}
+#tip .m{color:var(--muted)}
+.fonte{border-top:2px solid var(--grigio-chiaro);margin-top:18px;padding-top:8px;font-size:12.5px;color:var(--ink2)}
+.fonte p{margin:0 0 6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Quanto pesa l'affitto sullo stipendio</h1>
+  <p class="sub">Affitto medio di un'abitazione di 70 mq in percentuale dello stipendio netto medio, capoluoghi di provincia, 2025. Passa sulla città per i dettagli</p>
+  <div class="legend"><h3>Incidenza affitto/stipendio</h3><div class="bar" id="ramp"></div><div class="t" id="rampl"></div></div>
+  <div class="chart"><svg id="map" role="img" aria-label="Mappa dei capoluoghi di provincia per incidenza dell'affitto sullo stipendio"></svg></div>
+  <div class="fonte">
+    <p><b>Fonte:</b> elaborazione CNA. Perugia non è presente nel dataset</p>
+  </div>
+</div>
+<div id="tip"></div>
+<script>
+const ROWS = /*ROWS*/;
+const GEO = /*GEO*/;
+const fmt=(v,d=0)=>v.toLocaleString("it-IT",{minimumFractionDigits:d,maximumFractionDigits:d});
+const tip=document.getElementById("tip");
+function placeTip(e){const x=Math.min(e.clientX+14,innerWidth-tip.offsetWidth-8),y=Math.min(e.clientY+14,innerHeight-tip.offsetHeight-8);tip.style.left=Math.max(8,x)+"px";tip.style.top=Math.max(8,y)+"px";}
+// scala continua dall'azzurro chiaro al blu scuro
+const STOPS=["#cfeaf8","#169cdc","#073f5e"];
+const LO=Math.floor(Math.min(...ROWS.map(r=>r.inc))/10)*10, HI=Math.ceil(Math.max(...ROWS.map(r=>r.inc))/10)*10;
+const hx=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16));
+const color=v=>{let t=Math.max(0,Math.min(1,(v-LO)/(HI-LO)))*(STOPS.length-1);const i=Math.min(STOPS.length-2,Math.floor(t)),f=t-i,a=hx(STOPS[i]),b=hx(STOPS[i+1]);return "rgb("+a.map((v,k)=>Math.round(v+(b[k]-v)*f)).join(",")+")";};
+document.getElementById("ramp").style.background=`linear-gradient(to right,${STOPS.join(",")})`;
+const tk=[];for(let v=LO;v<=HI;v+=10)tk.push(v);if(tk[tk.length-1]!==HI)tk.push(HI);
+document.getElementById("rampl").innerHTML=tk.map(v=>`<span style="left:${(v-LO)/(HI-LO)*100}%">${v}%</span>`).join("");
+const NS="http://www.w3.org/2000/svg", svg=document.getElementById("map");
+svg.setAttribute("viewBox",`0 0 ${GEO.w} ${GEO.h}`);
+let s=GEO.d.map(d=>`<path class="prov" d="${d}"/>`).join("");
+// pallini più chiari sotto, più scuri sopra
+[...ROWS].map((r,i)=>[r,i]).sort((a,b)=>a[0].inc-b[0].inc).forEach(([r,i])=>{s+=`<circle class="dot" data-i="${i}" cx="${r.xy[0]}" cy="${r.xy[1]}" r="6.5" fill="${color(r.inc)}"/>`;});
+svg.innerHTML=s;
+svg.querySelectorAll(".dot").forEach(c=>{const r=ROWS[+c.dataset.i];
+  const mv=e=>{tip.innerHTML=`<b>${r.c}</b> <span class="m">(${r.r})</span><table>
+    <tr><td>Incidenza affitto/stipendio</td><td class="n"><b>${fmt(r.inc,1)}%</b></td></tr>
+    <tr><td>Stipendi mensili necessari per pagare un anno di affitto</td><td class="n"><b>${fmt(r.m,1)}</b></td></tr></table>`;tip.style.display="block";placeTip(e);};
+  c.addEventListener("mousemove",mv);c.addEventListener("touchstart",e=>mv(e.touches[0]),{passive:true});c.addEventListener("mouseleave",()=>tip.style.display="none");});
+let ultimaH=0;function h(){const v=Math.ceil(document.querySelector('.wrap').getBoundingClientRect().height);if(v!==ultimaH){ultimaH=v;parent.postMessage({gpEmbed:'affitti-mappa',height:v},'*');}}
+new ResizeObserver(h).observe(document.querySelector('.wrap'));addEventListener('load',h);setInterval(h,500);
+</script>
+</body>
+</html>
