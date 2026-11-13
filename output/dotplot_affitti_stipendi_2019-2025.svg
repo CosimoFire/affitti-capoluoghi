@@ -1,0 +1,356 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 2087" width="620" height="2087" font-family="'Source Serif 4',Georgia,serif">
+<rect width="620" height="2087" fill="#fff"/>
+<text x="12" y="44" font-size="30" font-weight="700" fill="#1a1a1a">Gli affitti corrono più degli stipendi</text>
+<text x="12" y="72" font-size="15" fill="#444">Capoluoghi di provincia ordinati per scarto tra crescita degli affitti e</text>
+<text x="12" y="92" font-size="15" fill="#444">degli stipendi, 2025 rispetto al 2019</text>
+<circle cx="18" cy="118" r="5.5" fill="#9b9b9b"/><text x="29" y="123" font-size="14" fill="#444">Aumento stipendi 2025 vs 2019</text>
+<circle cx="250" cy="118" r="5.5" fill="#169cdc"/><text x="261" y="123" font-size="14" fill="#444">Aumento dell&#39;affitto 2025 vs 2019</text>
+<line x1="0" x2="620" y1="134" y2="134" stroke="#d9d9d9" stroke-width="2"/>
+<line x1="120.0" x2="120.0" y1="156" y2="2013" stroke="#e6e6e6"/>
+<text x="120.0" y="150" font-size="12" fill="#6b6b6b" text-anchor="middle">0%</text>
+<text x="120.0" y="2029" font-size="12" fill="#6b6b6b" text-anchor="middle">0%</text>
+<line x1="216.8" x2="216.8" y1="156" y2="2013" stroke="#e6e6e6"/>
+<text x="216.8" y="150" font-size="12" fill="#6b6b6b" text-anchor="middle">+10%</text>
+<text x="216.8" y="2029" font-size="12" fill="#6b6b6b" text-anchor="middle">+10%</text>
+<line x1="313.6" x2="313.6" y1="156" y2="2013" stroke="#e6e6e6"/>
+<text x="313.6" y="150" font-size="12" fill="#6b6b6b" text-anchor="middle">+20%</text>
+<text x="313.6" y="2029" font-size="12" fill="#6b6b6b" text-anchor="middle">+20%</text>
+<line x1="410.4" x2="410.4" y1="156" y2="2013" stroke="#e6e6e6"/>
+<text x="410.4" y="150" font-size="12" fill="#6b6b6b" text-anchor="middle">+30%</text>
+<text x="410.4" y="2029" font-size="12" fill="#6b6b6b" text-anchor="middle">+30%</text>
+<line x1="507.2" x2="507.2" y1="156" y2="2013" stroke="#e6e6e6"/>
+<text x="507.2" y="150" font-size="12" fill="#6b6b6b" text-anchor="middle">+40%</text>
+<text x="507.2" y="2029" font-size="12" fill="#6b6b6b" text-anchor="middle">+40%</text>
+<line x1="604.0" x2="604.0" y1="156" y2="2013" stroke="#e6e6e6"/>
+<text x="604.0" y="150" font-size="12" fill="#6b6b6b" text-anchor="middle">+50%</text>
+<text x="604.0" y="2029" font-size="12" fill="#6b6b6b" text-anchor="middle">+50%</text>
+<text x="112" y="172.5" font-size="13" fill="#1a1a1a" text-anchor="end">Firenze</text>
+<line x1="216.8" x2="593.4" y1="168.5" y2="168.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="216.8" cy="168.5" r="4.5" fill="#9b9b9b"/><circle cx="593.4" cy="168.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="189.5" font-size="13" fill="#1a1a1a" text-anchor="end">Milano</text>
+<line x1="226.5" x2="596.3" y1="185.5" y2="185.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="226.5" cy="185.5" r="4.5" fill="#9b9b9b"/><circle cx="596.3" cy="185.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="206.5" font-size="13" fill="#1a1a1a" text-anchor="end">Bologna</text>
+<line x1="236.2" x2="558.5" y1="202.5" y2="202.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="236.2" cy="202.5" r="4.5" fill="#9b9b9b"/><circle cx="558.5" cy="202.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="223.5" font-size="13" fill="#1a1a1a" text-anchor="end">Venezia</text>
+<line x1="207.1" x2="521.7" y1="219.5" y2="219.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="219.5" r="4.5" fill="#9b9b9b"/><circle cx="521.7" cy="219.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="240.5" font-size="13" fill="#1a1a1a" text-anchor="end">Padova</text>
+<line x1="226.5" x2="540.1" y1="236.5" y2="236.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="226.5" cy="236.5" r="4.5" fill="#9b9b9b"/><circle cx="540.1" cy="236.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="257.5" font-size="13" fill="#1a1a1a" text-anchor="end">Napoli</text>
+<line x1="226.5" x2="521.7" y1="253.5" y2="253.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="226.5" cy="253.5" r="4.5" fill="#9b9b9b"/><circle cx="521.7" cy="253.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="274.5" font-size="13" fill="#1a1a1a" text-anchor="end">Verona</text>
+<line x1="216.8" x2="499.5" y1="270.5" y2="270.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="216.8" cy="270.5" r="4.5" fill="#9b9b9b"/><circle cx="499.5" cy="270.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="291.5" font-size="13" fill="#1a1a1a" text-anchor="end">Bari</text>
+<line x1="216.8" x2="494.6" y1="287.5" y2="287.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="216.8" cy="287.5" r="4.5" fill="#9b9b9b"/><circle cx="494.6" cy="287.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="308.5" font-size="13" fill="#1a1a1a" text-anchor="end">Pisa</text>
+<line x1="207.1" x2="470.4" y1="304.5" y2="304.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="304.5" r="4.5" fill="#9b9b9b"/><circle cx="470.4" cy="304.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="325.5" font-size="13" fill="#1a1a1a" text-anchor="end">Roma</text>
+<line x1="226.5" x2="475.3" y1="321.5" y2="321.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="226.5" cy="321.5" r="4.5" fill="#9b9b9b"/><circle cx="475.3" cy="321.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="342.5" font-size="13" fill="#1a1a1a" text-anchor="end">Palermo</text>
+<line x1="216.8" x2="442.3" y1="338.5" y2="338.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="216.8" cy="338.5" r="4.5" fill="#9b9b9b"/><circle cx="442.3" cy="338.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="359.5" font-size="13" fill="#1a1a1a" text-anchor="end">Torino</text>
+<line x1="236.2" x2="455.9" y1="355.5" y2="355.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="236.2" cy="355.5" r="4.5" fill="#9b9b9b"/><circle cx="455.9" cy="355.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="376.5" font-size="13" fill="#1a1a1a" text-anchor="end">Parma</text>
+<line x1="226.5" x2="442.3" y1="372.5" y2="372.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="226.5" cy="372.5" r="4.5" fill="#9b9b9b"/><circle cx="442.3" cy="372.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="393.5" font-size="13" fill="#1a1a1a" text-anchor="end">Cagliari</text>
+<line x1="207.1" x2="421.0" y1="389.5" y2="389.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="389.5" r="4.5" fill="#9b9b9b"/><circle cx="421.0" cy="389.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="410.5" font-size="13" fill="#1a1a1a" text-anchor="end">Genova</text>
+<line x1="216.8" x2="428.8" y1="406.5" y2="406.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="216.8" cy="406.5" r="4.5" fill="#9b9b9b"/><circle cx="428.8" cy="406.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="427.5" font-size="13" fill="#1a1a1a" text-anchor="end">Modena</text>
+<line x1="226.5" x2="435.6" y1="423.5" y2="423.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="226.5" cy="423.5" r="4.5" fill="#9b9b9b"/><circle cx="435.6" cy="423.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="444.5" font-size="13" fill="#1a1a1a" text-anchor="end">Bergamo</text>
+<line x1="226.5" x2="430.7" y1="440.5" y2="440.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="226.5" cy="440.5" r="4.5" fill="#9b9b9b"/><circle cx="430.7" cy="440.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="461.5" font-size="13" fill="#1a1a1a" text-anchor="end">Brescia</text>
+<line x1="226.5" x2="428.8" y1="457.5" y2="457.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="226.5" cy="457.5" r="4.5" fill="#9b9b9b"/><circle cx="428.8" cy="457.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="478.5" font-size="13" fill="#1a1a1a" text-anchor="end">Trieste</text>
+<line x1="216.8" x2="407.5" y1="474.5" y2="474.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="216.8" cy="474.5" r="4.5" fill="#9b9b9b"/><circle cx="407.5" cy="474.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="495.5" font-size="13" fill="#1a1a1a" text-anchor="end">Ancona</text>
+<line x1="207.1" x2="387.2" y1="491.5" y2="491.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="491.5" r="4.5" fill="#9b9b9b"/><circle cx="387.2" cy="491.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="512.5" font-size="13" fill="#1a1a1a" text-anchor="end">Siena</text>
+<line x1="207.1" x2="369.7" y1="508.5" y2="508.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="508.5" r="4.5" fill="#9b9b9b"/><circle cx="369.7" cy="508.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="529.5" font-size="13" fill="#1a1a1a" text-anchor="end">Avellino</text>
+<line x1="207.1" x2="366.8" y1="525.5" y2="525.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="525.5" r="4.5" fill="#9b9b9b"/><circle cx="366.8" cy="525.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="546.5" font-size="13" fill="#1a1a1a" text-anchor="end">Rimini</text>
+<line x1="207.1" x2="365.9" y1="542.5" y2="542.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="542.5" r="4.5" fill="#9b9b9b"/><circle cx="365.9" cy="542.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="563.5" font-size="13" fill="#1a1a1a" text-anchor="end">Lucca</text>
+<line x1="207.1" x2="362.0" y1="559.5" y2="559.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="559.5" r="4.5" fill="#9b9b9b"/><circle cx="362.0" cy="559.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="580.5" font-size="13" fill="#1a1a1a" text-anchor="end">Reggio Calabria</text>
+<line x1="207.1" x2="362.0" y1="576.5" y2="576.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="576.5" r="4.5" fill="#9b9b9b"/><circle cx="362.0" cy="576.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="597.5" font-size="13" fill="#1a1a1a" text-anchor="end">Aosta</text>
+<line x1="216.8" x2="368.8" y1="593.5" y2="593.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="216.8" cy="593.5" r="4.5" fill="#9b9b9b"/><circle cx="368.8" cy="593.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="614.5" font-size="13" fill="#1a1a1a" text-anchor="end">Trento</text>
+<line x1="226.5" x2="374.6" y1="610.5" y2="610.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="226.5" cy="610.5" r="4.5" fill="#9b9b9b"/><circle cx="374.6" cy="610.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="631.5" font-size="13" fill="#1a1a1a" text-anchor="end">Matera</text>
+<line x1="197.4" x2="343.6" y1="627.5" y2="627.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="627.5" r="4.5" fill="#9b9b9b"/><circle cx="343.6" cy="627.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="648.5" font-size="13" fill="#1a1a1a" text-anchor="end">Como</text>
+<line x1="216.8" x2="362.0" y1="644.5" y2="644.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="216.8" cy="644.5" r="4.5" fill="#9b9b9b"/><circle cx="362.0" cy="644.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="665.5" font-size="13" fill="#1a1a1a" text-anchor="end">Lecco</text>
+<line x1="216.8" x2="362.0" y1="661.5" y2="661.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="216.8" cy="661.5" r="4.5" fill="#9b9b9b"/><circle cx="362.0" cy="661.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="682.5" font-size="13" fill="#1a1a1a" text-anchor="end">Treviso</text>
+<line x1="216.8" x2="362.0" y1="678.5" y2="678.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="216.8" cy="678.5" r="4.5" fill="#9b9b9b"/><circle cx="362.0" cy="678.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="699.5" font-size="13" fill="#1a1a1a" text-anchor="end">L&#39;Aquila</text>
+<line x1="207.1" x2="352.3" y1="695.5" y2="695.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="695.5" r="4.5" fill="#9b9b9b"/><circle cx="352.3" cy="695.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="716.5" font-size="13" fill="#1a1a1a" text-anchor="end">La Spezia</text>
+<line x1="207.1" x2="350.4" y1="712.5" y2="712.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="712.5" r="4.5" fill="#9b9b9b"/><circle cx="350.4" cy="712.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="733.5" font-size="13" fill="#1a1a1a" text-anchor="end">Isernia</text>
+<line x1="197.4" x2="339.7" y1="729.5" y2="729.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="729.5" r="4.5" fill="#9b9b9b"/><circle cx="339.7" cy="729.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="750.5" font-size="13" fill="#1a1a1a" text-anchor="end">Vicenza</text>
+<line x1="216.8" x2="358.1" y1="746.5" y2="746.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="216.8" cy="746.5" r="4.5" fill="#9b9b9b"/><circle cx="358.1" cy="746.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="767.5" font-size="13" fill="#1a1a1a" text-anchor="end">Savona</text>
+<line x1="207.1" x2="345.5" y1="763.5" y2="763.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="763.5" r="4.5" fill="#9b9b9b"/><circle cx="345.5" cy="763.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="784.5" font-size="13" fill="#1a1a1a" text-anchor="end">Pavia</text>
+<line x1="216.8" x2="354.3" y1="780.5" y2="780.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="216.8" cy="780.5" r="4.5" fill="#9b9b9b"/><circle cx="354.3" cy="780.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="801.5" font-size="13" fill="#1a1a1a" text-anchor="end">Catania</text>
+<line x1="207.1" x2="344.6" y1="797.5" y2="797.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="797.5" r="4.5" fill="#9b9b9b"/><circle cx="344.6" cy="797.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="818.5" font-size="13" fill="#1a1a1a" text-anchor="end">Messina</text>
+<line x1="197.4" x2="334.9" y1="814.5" y2="814.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="814.5" r="4.5" fill="#9b9b9b"/><circle cx="334.9" cy="814.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="835.5" font-size="13" fill="#1a1a1a" text-anchor="end">Caltanissetta</text>
+<line x1="197.4" x2="333.9" y1="831.5" y2="831.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="831.5" r="4.5" fill="#9b9b9b"/><circle cx="333.9" cy="831.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="852.5" font-size="13" fill="#1a1a1a" text-anchor="end">Gorizia</text>
+<line x1="197.4" x2="333.0" y1="848.5" y2="848.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="848.5" r="4.5" fill="#9b9b9b"/><circle cx="333.0" cy="848.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="869.5" font-size="13" fill="#1a1a1a" text-anchor="end">Taranto</text>
+<line x1="197.4" x2="333.0" y1="865.5" y2="865.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="865.5" r="4.5" fill="#9b9b9b"/><circle cx="333.0" cy="865.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="886.5" font-size="13" fill="#1a1a1a" text-anchor="end">Cosenza</text>
+<line x1="197.4" x2="333.0" y1="882.5" y2="882.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="882.5" r="4.5" fill="#9b9b9b"/><circle cx="333.0" cy="882.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="903.5" font-size="13" fill="#1a1a1a" text-anchor="end">Varese</text>
+<line x1="216.8" x2="350.4" y1="899.5" y2="899.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="216.8" cy="899.5" r="4.5" fill="#9b9b9b"/><circle cx="350.4" cy="899.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="920.5" font-size="13" fill="#1a1a1a" text-anchor="end">Monza</text>
+<line x1="216.8" x2="349.4" y1="916.5" y2="916.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="216.8" cy="916.5" r="4.5" fill="#9b9b9b"/><circle cx="349.4" cy="916.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="937.5" font-size="13" fill="#1a1a1a" text-anchor="end">Crotone</text>
+<line x1="197.4" x2="330.1" y1="933.5" y2="933.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="933.5" r="4.5" fill="#9b9b9b"/><circle cx="330.1" cy="933.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="954.5" font-size="13" fill="#1a1a1a" text-anchor="end">Lecce</text>
+<line x1="197.4" x2="327.2" y1="950.5" y2="950.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="950.5" r="4.5" fill="#9b9b9b"/><circle cx="327.2" cy="950.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="971.5" font-size="13" fill="#1a1a1a" text-anchor="end">Enna</text>
+<line x1="197.4" x2="327.2" y1="967.5" y2="967.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="967.5" r="4.5" fill="#9b9b9b"/><circle cx="327.2" cy="967.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="988.5" font-size="13" fill="#1a1a1a" text-anchor="end">Foggia</text>
+<line x1="197.4" x2="323.3" y1="984.5" y2="984.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="984.5" r="4.5" fill="#9b9b9b"/><circle cx="323.3" cy="984.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1005.5" font-size="13" fill="#1a1a1a" text-anchor="end">Ragusa</text>
+<line x1="197.4" x2="323.3" y1="1001.5" y2="1001.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1001.5" r="4.5" fill="#9b9b9b"/><circle cx="323.3" cy="1001.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1022.5" font-size="13" fill="#1a1a1a" text-anchor="end">Udine</text>
+<line x1="207.1" x2="332.0" y1="1018.5" y2="1018.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="1018.5" r="4.5" fill="#9b9b9b"/><circle cx="332.0" cy="1018.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1039.5" font-size="13" fill="#1a1a1a" text-anchor="end">Vibo Valentia</text>
+<line x1="197.4" x2="322.3" y1="1035.5" y2="1035.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1035.5" r="4.5" fill="#9b9b9b"/><circle cx="322.3" cy="1035.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1056.5" font-size="13" fill="#1a1a1a" text-anchor="end">Pordenone</text>
+<line x1="207.1" x2="331.0" y1="1052.5" y2="1052.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="1052.5" r="4.5" fill="#9b9b9b"/><circle cx="331.0" cy="1052.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1073.5" font-size="13" fill="#1a1a1a" text-anchor="end">Sassari</text>
+<line x1="197.4" x2="321.3" y1="1069.5" y2="1069.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1069.5" r="4.5" fill="#9b9b9b"/><circle cx="321.3" cy="1069.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1090.5" font-size="13" fill="#1a1a1a" text-anchor="end">Agrigento</text>
+<line x1="197.4" x2="320.4" y1="1086.5" y2="1086.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1086.5" r="4.5" fill="#9b9b9b"/><circle cx="320.4" cy="1086.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1107.5" font-size="13" fill="#1a1a1a" text-anchor="end">Ferrara</text>
+<line x1="207.1" x2="327.2" y1="1103.5" y2="1103.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="1103.5" r="4.5" fill="#9b9b9b"/><circle cx="327.2" cy="1103.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1124.5" font-size="13" fill="#1a1a1a" text-anchor="end">Grosseto</text>
+<line x1="197.4" x2="317.5" y1="1120.5" y2="1120.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1120.5" r="4.5" fill="#9b9b9b"/><circle cx="317.5" cy="1120.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1141.5" font-size="13" fill="#1a1a1a" text-anchor="end">Benevento</text>
+<line x1="197.4" x2="317.5" y1="1137.5" y2="1137.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1137.5" r="4.5" fill="#9b9b9b"/><circle cx="317.5" cy="1137.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1158.5" font-size="13" fill="#1a1a1a" text-anchor="end">Trani</text>
+<line x1="197.4" x2="317.5" y1="1154.5" y2="1154.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1154.5" r="4.5" fill="#9b9b9b"/><circle cx="317.5" cy="1154.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1175.5" font-size="13" fill="#1a1a1a" text-anchor="end">Catanzaro</text>
+<line x1="207.1" x2="326.2" y1="1171.5" y2="1171.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="1171.5" r="4.5" fill="#9b9b9b"/><circle cx="326.2" cy="1171.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1192.5" font-size="13" fill="#1a1a1a" text-anchor="end">Ravenna</text>
+<line x1="207.1" x2="325.2" y1="1188.5" y2="1188.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="1188.5" r="4.5" fill="#9b9b9b"/><circle cx="325.2" cy="1188.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1209.5" font-size="13" fill="#1a1a1a" text-anchor="end">Andria</text>
+<line x1="197.4" x2="315.5" y1="1205.5" y2="1205.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1205.5" r="4.5" fill="#9b9b9b"/><circle cx="315.5" cy="1205.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1226.5" font-size="13" fill="#1a1a1a" text-anchor="end">Siracusa</text>
+<line x1="197.4" x2="315.5" y1="1222.5" y2="1222.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1222.5" r="4.5" fill="#9b9b9b"/><circle cx="315.5" cy="1222.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1243.5" font-size="13" fill="#1a1a1a" text-anchor="end">Pistoia</text>
+<line x1="197.4" x2="313.6" y1="1239.5" y2="1239.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1239.5" r="4.5" fill="#9b9b9b"/><circle cx="313.6" cy="1239.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1260.5" font-size="13" fill="#1a1a1a" text-anchor="end">Brindisi</text>
+<line x1="197.4" x2="313.6" y1="1256.5" y2="1256.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1256.5" r="4.5" fill="#9b9b9b"/><circle cx="313.6" cy="1256.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1277.5" font-size="13" fill="#1a1a1a" text-anchor="end">Sud Sardegna</text>
+<line x1="197.4" x2="313.6" y1="1273.5" y2="1273.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1273.5" r="4.5" fill="#9b9b9b"/><circle cx="313.6" cy="1273.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1294.5" font-size="13" fill="#1a1a1a" text-anchor="end">Campobasso</text>
+<line x1="197.4" x2="313.6" y1="1290.5" y2="1290.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1290.5" r="4.5" fill="#9b9b9b"/><circle cx="313.6" cy="1290.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1311.5" font-size="13" fill="#1a1a1a" text-anchor="end">Forlì</text>
+<line x1="207.1" x2="322.3" y1="1307.5" y2="1307.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="1307.5" r="4.5" fill="#9b9b9b"/><circle cx="322.3" cy="1307.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1328.5" font-size="13" fill="#1a1a1a" text-anchor="end">Barletta</text>
+<line x1="197.4" x2="311.7" y1="1324.5" y2="1324.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1324.5" r="4.5" fill="#9b9b9b"/><circle cx="311.7" cy="1324.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1345.5" font-size="13" fill="#1a1a1a" text-anchor="end">Trapani</text>
+<line x1="197.4" x2="311.7" y1="1341.5" y2="1341.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1341.5" r="4.5" fill="#9b9b9b"/><circle cx="311.7" cy="1341.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1362.5" font-size="13" fill="#1a1a1a" text-anchor="end">Oristano</text>
+<line x1="197.4" x2="311.7" y1="1358.5" y2="1358.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1358.5" r="4.5" fill="#9b9b9b"/><circle cx="311.7" cy="1358.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1379.5" font-size="13" fill="#1a1a1a" text-anchor="end">Cesena</text>
+<line x1="207.1" x2="320.4" y1="1375.5" y2="1375.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="1375.5" r="4.5" fill="#9b9b9b"/><circle cx="320.4" cy="1375.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1396.5" font-size="13" fill="#1a1a1a" text-anchor="end">Piacenza</text>
+<line x1="216.8" x2="329.1" y1="1392.5" y2="1392.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="216.8" cy="1392.5" r="4.5" fill="#9b9b9b"/><circle cx="329.1" cy="1392.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1413.5" font-size="13" fill="#1a1a1a" text-anchor="end">Massa</text>
+<line x1="197.4" x2="309.7" y1="1409.5" y2="1409.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1409.5" r="4.5" fill="#9b9b9b"/><circle cx="309.7" cy="1409.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1430.5" font-size="13" fill="#1a1a1a" text-anchor="end">Pesaro</text>
+<line x1="197.4" x2="309.7" y1="1426.5" y2="1426.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1426.5" r="4.5" fill="#9b9b9b"/><circle cx="309.7" cy="1426.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1447.5" font-size="13" fill="#1a1a1a" text-anchor="end">Nuoro</text>
+<line x1="197.4" x2="309.7" y1="1443.5" y2="1443.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1443.5" r="4.5" fill="#9b9b9b"/><circle cx="309.7" cy="1443.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1464.5" font-size="13" fill="#1a1a1a" text-anchor="end">Potenza</text>
+<line x1="197.4" x2="309.7" y1="1460.5" y2="1460.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1460.5" r="4.5" fill="#9b9b9b"/><circle cx="309.7" cy="1460.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1481.5" font-size="13" fill="#1a1a1a" text-anchor="end">Arezzo</text>
+<line x1="207.1" x2="318.4" y1="1477.5" y2="1477.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="1477.5" r="4.5" fill="#9b9b9b"/><circle cx="318.4" cy="1477.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1498.5" font-size="13" fill="#1a1a1a" text-anchor="end">Caserta</text>
+<line x1="197.4" x2="307.8" y1="1494.5" y2="1494.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1494.5" r="4.5" fill="#9b9b9b"/><circle cx="307.8" cy="1494.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1515.5" font-size="13" fill="#1a1a1a" text-anchor="end">Reggio Emilia</text>
+<line x1="216.8" x2="326.2" y1="1511.5" y2="1511.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="216.8" cy="1511.5" r="4.5" fill="#9b9b9b"/><circle cx="326.2" cy="1511.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1532.5" font-size="13" fill="#1a1a1a" text-anchor="end">Imperia</text>
+<line x1="197.4" x2="306.8" y1="1528.5" y2="1528.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1528.5" r="4.5" fill="#9b9b9b"/><circle cx="306.8" cy="1528.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1549.5" font-size="13" fill="#1a1a1a" text-anchor="end">Bolzano</text>
+<line x1="226.5" x2="334.9" y1="1545.5" y2="1545.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="226.5" cy="1545.5" r="4.5" fill="#9b9b9b"/><circle cx="334.9" cy="1545.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1566.5" font-size="13" fill="#1a1a1a" text-anchor="end">Macerata</text>
+<line x1="197.4" x2="305.9" y1="1562.5" y2="1562.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1562.5" r="4.5" fill="#9b9b9b"/><circle cx="305.9" cy="1562.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1583.5" font-size="13" fill="#1a1a1a" text-anchor="end">Viterbo</text>
+<line x1="197.4" x2="305.9" y1="1579.5" y2="1579.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1579.5" r="4.5" fill="#9b9b9b"/><circle cx="305.9" cy="1579.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1600.5" font-size="13" fill="#1a1a1a" text-anchor="end">Verbano-Cusio-Ossola</text>
+<line x1="197.4" x2="305.9" y1="1596.5" y2="1596.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1596.5" r="4.5" fill="#9b9b9b"/><circle cx="305.9" cy="1596.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1617.5" font-size="13" fill="#1a1a1a" text-anchor="end">Ascoli Piceno</text>
+<line x1="197.4" x2="303.9" y1="1613.5" y2="1613.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1613.5" r="4.5" fill="#9b9b9b"/><circle cx="303.9" cy="1613.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1634.5" font-size="13" fill="#1a1a1a" text-anchor="end">Terni</text>
+<line x1="197.4" x2="303.9" y1="1630.5" y2="1630.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1630.5" r="4.5" fill="#9b9b9b"/><circle cx="303.9" cy="1630.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1651.5" font-size="13" fill="#1a1a1a" text-anchor="end">Livorno</text>
+<line x1="207.1" x2="311.7" y1="1647.5" y2="1647.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="1647.5" r="4.5" fill="#9b9b9b"/><circle cx="311.7" cy="1647.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1668.5" font-size="13" fill="#1a1a1a" text-anchor="end">Latina</text>
+<line x1="197.4" x2="302.0" y1="1664.5" y2="1664.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1664.5" r="4.5" fill="#9b9b9b"/><circle cx="302.0" cy="1664.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1685.5" font-size="13" fill="#1a1a1a" text-anchor="end">Prato</text>
+<line x1="207.1" x2="310.7" y1="1681.5" y2="1681.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="1681.5" r="4.5" fill="#9b9b9b"/><circle cx="310.7" cy="1681.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1702.5" font-size="13" fill="#1a1a1a" text-anchor="end">Salerno</text>
+<line x1="207.1" x2="308.8" y1="1698.5" y2="1698.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="1698.5" r="4.5" fill="#9b9b9b"/><circle cx="308.8" cy="1698.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1719.5" font-size="13" fill="#1a1a1a" text-anchor="end">Mantova</text>
+<line x1="197.4" x2="299.1" y1="1715.5" y2="1715.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1715.5" r="4.5" fill="#9b9b9b"/><circle cx="299.1" cy="1715.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1736.5" font-size="13" fill="#1a1a1a" text-anchor="end">Belluno</text>
+<line x1="197.4" x2="299.1" y1="1732.5" y2="1732.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1732.5" r="4.5" fill="#9b9b9b"/><circle cx="299.1" cy="1732.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1753.5" font-size="13" fill="#1a1a1a" text-anchor="end">Fermo</text>
+<line x1="197.4" x2="298.1" y1="1749.5" y2="1749.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1749.5" r="4.5" fill="#9b9b9b"/><circle cx="298.1" cy="1749.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1770.5" font-size="13" fill="#1a1a1a" text-anchor="end">Cremona</text>
+<line x1="197.4" x2="297.1" y1="1766.5" y2="1766.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1766.5" r="4.5" fill="#9b9b9b"/><circle cx="297.1" cy="1766.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1787.5" font-size="13" fill="#1a1a1a" text-anchor="end">Vercelli</text>
+<line x1="197.4" x2="295.2" y1="1783.5" y2="1783.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1783.5" r="4.5" fill="#9b9b9b"/><circle cx="295.2" cy="1783.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1804.5" font-size="13" fill="#1a1a1a" text-anchor="end">Frosinone</text>
+<line x1="197.4" x2="294.2" y1="1800.5" y2="1800.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1800.5" r="4.5" fill="#9b9b9b"/><circle cx="294.2" cy="1800.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1821.5" font-size="13" fill="#1a1a1a" text-anchor="end">Chieti</text>
+<line x1="197.4" x2="294.2" y1="1817.5" y2="1817.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1817.5" r="4.5" fill="#9b9b9b"/><circle cx="294.2" cy="1817.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1838.5" font-size="13" fill="#1a1a1a" text-anchor="end">Asti</text>
+<line x1="197.4" x2="294.2" y1="1834.5" y2="1834.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1834.5" r="4.5" fill="#9b9b9b"/><circle cx="294.2" cy="1834.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1855.5" font-size="13" fill="#1a1a1a" text-anchor="end">Alessandria</text>
+<line x1="197.4" x2="294.2" y1="1851.5" y2="1851.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1851.5" r="4.5" fill="#9b9b9b"/><circle cx="294.2" cy="1851.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1872.5" font-size="13" fill="#1a1a1a" text-anchor="end">Pescara</text>
+<line x1="207.1" x2="302.0" y1="1868.5" y2="1868.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="1868.5" r="4.5" fill="#9b9b9b"/><circle cx="302.0" cy="1868.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1889.5" font-size="13" fill="#1a1a1a" text-anchor="end">Novara</text>
+<line x1="207.1" x2="302.0" y1="1885.5" y2="1885.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="1885.5" r="4.5" fill="#9b9b9b"/><circle cx="302.0" cy="1885.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1906.5" font-size="13" fill="#1a1a1a" text-anchor="end">Lodi</text>
+<line x1="207.1" x2="302.0" y1="1902.5" y2="1902.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="1902.5" r="4.5" fill="#9b9b9b"/><circle cx="302.0" cy="1902.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1923.5" font-size="13" fill="#1a1a1a" text-anchor="end">Rieti</text>
+<line x1="197.4" x2="291.3" y1="1919.5" y2="1919.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1919.5" r="4.5" fill="#9b9b9b"/><circle cx="291.3" cy="1919.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1940.5" font-size="13" fill="#1a1a1a" text-anchor="end">Biella</text>
+<line x1="197.4" x2="291.3" y1="1936.5" y2="1936.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1936.5" r="4.5" fill="#9b9b9b"/><circle cx="291.3" cy="1936.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1957.5" font-size="13" fill="#1a1a1a" text-anchor="end">Rovigo</text>
+<line x1="197.4" x2="291.3" y1="1953.5" y2="1953.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="1953.5" r="4.5" fill="#9b9b9b"/><circle cx="291.3" cy="1953.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1974.5" font-size="13" fill="#1a1a1a" text-anchor="end">Cuneo</text>
+<line x1="207.1" x2="299.1" y1="1970.5" y2="1970.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="1970.5" r="4.5" fill="#9b9b9b"/><circle cx="299.1" cy="1970.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="1991.5" font-size="13" fill="#1a1a1a" text-anchor="end">Sondrio</text>
+<line x1="207.1" x2="299.1" y1="1987.5" y2="1987.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="207.1" cy="1987.5" r="4.5" fill="#9b9b9b"/><circle cx="299.1" cy="1987.5" r="4.5" fill="#169cdc"/>
+<text x="112" y="2008.5" font-size="13" fill="#1a1a1a" text-anchor="end">Teramo</text>
+<line x1="197.4" x2="287.5" y1="2004.5" y2="2004.5" stroke="#d9d9d9" stroke-width="3"/>
+<circle cx="197.4" cy="2004.5" r="4.5" fill="#9b9b9b"/><circle cx="287.5" cy="2004.5" r="4.5" fill="#169cdc"/>
+<line x1="12" x2="608" y1="2053" y2="2053" stroke="#d9d9d9" stroke-width="2"/>
+<text x="12" y="2073" font-size="12.5" fill="#444"><tspan font-weight="700">Fonte:</tspan> elaborazione CNA. Affitto medio di un&#39;abitazione di 70 mq, stipendio netto medio mensile</text>
+</svg>

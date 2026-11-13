@@ -4,6 +4,7 @@ Due grafici interattivi su dati CNA (foglio `Dataset_109`, 109 capoluoghi di pro
 
 - `dotplot.html`: aumento degli stipendi e degli affitti 2025 rispetto al 2019, città ordinate per scarto (punti percentuali).
 - `mappa.html`: incidenza dell'affitto medio (70 mq) sullo stipendio netto medio, 2025.
+- `output/`: versioni statiche SVG dei due grafici (`python src/svg.py`, dopo `build.py`).
 
 Medie semplici sui 109 capoluoghi: stipendi +8,9%, affitti +23,9%, scarto 15,0 punti.
 
