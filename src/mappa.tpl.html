@@ -23,7 +23,7 @@ h1{font-size:clamp(28px,6vw,44px);line-height:1.1;margin:0 0 6px;font-weight:700
 .t span:first-child{transform:none}.t span:last-child{transform:translateX(-100%)}
 .chart{border-top:2px solid var(--grigio-chiaro);padding-top:6px}
 svg{display:block}
-#map{width:100%;height:auto;max-width:520px;margin:0 auto}
+#map{width:100%;height:auto;max-width:560px;margin:0 auto}
 .prov{fill:#f2f2f2;stroke:#fff;stroke-width:.6}
 .dot{stroke:#9b9b9b;stroke-opacity:.5;stroke-width:1.2;cursor:pointer}
 .dot:hover{stroke:var(--ink);stroke-width:1.8}
@@ -52,6 +52,8 @@ svg{display:block}
 <script>
 const ROWS = /*ROWS*/;
 const GEO = /*GEO*/;
+// etichette dei primi e ultimi 3 per incidenza, posizionate da src/svg.py (stesse dell'SVG statico)
+const ETI = {"lead":"","lab":""};
 const fmt=(v,d=0)=>v.toLocaleString("it-IT",{minimumFractionDigits:d,maximumFractionDigits:d});
 const tip=document.getElementById("tip");
 function placeTip(e){const x=Math.min(e.clientX+14,innerWidth-tip.offsetWidth-8),y=Math.min(e.clientY+14,innerHeight-tip.offsetHeight-8);tip.style.left=Math.max(8,x)+"px";tip.style.top=Math.max(8,y)+"px";}
@@ -64,10 +66,12 @@ document.getElementById("ramp").style.background=`linear-gradient(to right,${STO
 const tk=[];for(let v=LO;v<=HI;v+=10)tk.push(v);if(tk[tk.length-1]!==HI)tk.push(HI);
 document.getElementById("rampl").innerHTML=tk.map(v=>`<span style="left:${(v-LO)/(HI-LO)*100}%">${v}%</span>`).join("");
 const NS="http://www.w3.org/2000/svg", svg=document.getElementById("map");
-svg.setAttribute("viewBox",`0 0 ${GEO.w} ${GEO.h}`);
+svg.setAttribute("viewBox",`-45 0 ${GEO.w+45} ${GEO.h}`); // margine a sinistra per l'etichetta di Milano
 let s=GEO.d.map(d=>`<path class="prov" d="${d}"/>`).join("");
+s+=ETI.lead; // linee di richiamo sotto i pallini
 // pallini più chiari sotto, più scuri sopra
 [...ROWS].map((r,i)=>[r,i]).sort((a,b)=>a[0].inc-b[0].inc).forEach(([r,i])=>{s+=`<circle class="dot" data-i="${i}" cx="${r.xy[0]}" cy="${r.xy[1]}" r="6.5" fill="${color(r.inc)}"/>`;});
+s+=`<g style="pointer-events:none">${ETI.lab}</g>`;
 svg.innerHTML=s;
 svg.querySelectorAll(".dot").forEach(c=>{const r=ROWS[+c.dataset.i];
   const mv=e=>{tip.innerHTML=`<b>${r.c}</b> <span class="m">(${r.r})</span><table>

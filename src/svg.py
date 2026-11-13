@@ -97,8 +97,14 @@ for r in srt[:3] + srt[-3:]:
     labels.append(f'<text x="{tx:.1f}" y="{ty:.1f}" font-size="{fs:.1f}" text-anchor="{a}" fill="{INK}" stroke="#fff" stroke-width="{4/sc:.1f}" '
                   f'stroke-linejoin="round" paint-order="stroke">{len(srt) - srt.index(r)}° <tspan font-weight="700">{esc(r["c"])}</tspan> {it(r["inc"],1)}%</text>')
 i0 = next(i for i, x in enumerate(s) if x.startswith("<circle") and 'r="6.5"' in x)
-s[i0:i0] = [f'<line x1="{a}" y1="{b}" x2="{c:.1f}" y2="{d:.1f}" stroke="{INK}" stroke-width="{1/sc:.2f}"/>' for a, b, c, d in lead]  # linee sotto i pallini
+lead_svg = [f'<line x1="{a}" y1="{b}" x2="{c:.1f}" y2="{d:.1f}" stroke="{INK}" stroke-width="{1/sc:.2f}"/>' for a, b, c, d in lead]
+s[i0:i0] = lead_svg  # linee sotto i pallini
 s += labels
+# stesse etichette nella mappa interattiva
+mp = ROOT / "mappa.html"
+h = mp.read_text(encoding="utf8")
+h = re.sub(r'const ETI = \{.*?\};', lambda m: "const ETI = " + json.dumps({"lead": "".join(lead_svg), "lab": "".join(labels)}, ensure_ascii=False) + ";", h, count=1)
+mp.write_text(h, encoding="utf8")
 s.append("</g>")
 s += foot(W, H - 34, "elaborazione CNA. Perugia non è presente nel dataset")
 (OUT / "mappa_incidenza_affitto_stipendio_2025.svg").write_text("\n".join(s), encoding="utf8")
