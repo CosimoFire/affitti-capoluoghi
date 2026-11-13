@@ -67,6 +67,23 @@ s.append(f'<g transform="translate({(W-520)/2:.1f},{top}) scale({sc:.5f})">')
 s += [f'<path d="{d}" fill="#f2f2f2" stroke="#fff" stroke-width="0.6"/>' for d in geo["d"]]
 s += [f'<circle cx="{r["xy"][0]}" cy="{r["xy"][1]}" r="6.5" fill="{col(r["inc"])}" stroke="#9b9b9b" stroke-opacity="0.5" stroke-width="1.2"/>'
       for r in sorted(rows, key=lambda r: r["inc"])]
+# etichette: prime 3 e ultime 3 per incidenza (lato dell'etichetta scelto per non coprire altri capoluoghi)
+srt = sorted(rows, key=lambda r: r["inc"])
+LATO = {"Vercelli": "end"}
+# Milano sta in mezzo a molti capoluoghi: etichetta spostata nell'area vuota a nord-ovest, con linea di richiamo
+FUORI = {"Milano": (-40, 52)}
+fs = 13 / sc
+lead = [f'<line x1="{r["xy"][0]}" y1="{r["xy"][1]}" x2="{FUORI[r["c"]][0] + 117}" y2="{FUORI[r["c"]][1] + 4}" stroke="{INK}" stroke-width="{1/sc:.2f}"/>'
+        for r in srt[-3:] if r["c"] in FUORI]
+i0 = next(i for i, x in enumerate(s) if x.startswith("<circle") and "r=\"6.5\"" in x)
+s[i0:i0] = lead  # linee sotto i pallini
+for r in srt[:3] + srt[-3:]:
+    cx, cy = r["xy"]; a = LATO.get(r["c"], "start"); dx = -10 if a == "end" else 10
+    s.append(f'<circle cx="{cx}" cy="{cy}" r="6.5" fill="none" stroke="{INK}" stroke-width="1.4"/>')
+    if r["c"] in FUORI:
+        (tx, ty), dx, a = FUORI[r["c"]], 0, "start"; cx, cy = tx, ty - fs * 0.35
+    s.append(f'<text x="{cx+dx}" y="{cy+fs*0.35:.1f}" font-size="{fs:.1f}" text-anchor="{a}" fill="{INK}" stroke="#fff" stroke-width="{4/sc:.1f}" '
+             f'stroke-linejoin="round" paint-order="stroke"><tspan font-weight="700">{esc(r["c"])}</tspan> {it(r["inc"],1)}%</text>')
 s.append("</g>")
 s += foot(W, H - 34, "elaborazione CNA. Perugia non è presente nel dataset")
 (OUT / "mappa_incidenza_affitto_stipendio_2025.svg").write_text("\n".join(s), encoding="utf8")
